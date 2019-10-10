@@ -73,3 +73,5 @@ const startInquirer = () => {
   await getDirs(rootDirectory)
   startInquirer()
 })()
+
+module.exports = { startInquirer, pullDir, getDirs }
