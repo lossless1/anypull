@@ -1,15 +1,23 @@
 {
-  "name": "puller",
-  "version": "1.0.0",
+  "name": "anypull",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": {
+    "name": "Volodymyr Saakian",
+    "email": "volodymyr.saakian@gmail.com",
+    "url": "http://volodymyrsaakian.com"
+    },
   "license": "ISC",
   "dependencies": {
     "inquirer": "^7.0.0",
     "simple-git": "^1.126.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lossless1/anypull.git"
   }
 }

@@ -63,7 +63,9 @@ const startInquirer = () => {
     .then(async (answers) => {
       console.log(answers)
       console.log(answers.repos)
-      return await Promise.all(answers.repos.map((repo) => pullDir(repo)))
+      const pullDirs = await Promise.all(answers.repos.map((repo) => pullDir(repo)))
+
+      return pullDirs
     })
 }
 
