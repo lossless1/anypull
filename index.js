@@ -69,9 +69,13 @@ const startInquirer = () => {
     })
 }
 
-;+(async () => {
-  await getDirs(rootDirectory)
-  startInquirer()
-})()
+  ; +(async () => {
+    await getDirs(rootDirectory)
+    if (!remotes.length) {
+      console.log(`Unable to locate any repositories at "${rootDirectory}"`)
+      return
+    }
+    startInquirer()
+  })()
 
 module.exports = { startInquirer, pullDir, getDirs }
